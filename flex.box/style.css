@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* DEFAULT VALUES
+-displays flex
+-flex direction :row
+-flex wrap : 
+-aling items: flex start
+-justify content : flex start
+*/
+
+section{/* display flex activa el flexbox, primero hace que las 3 cajas esten ordenen */
+    display: flex;
+    flex-wrap: nowrap;/* cuando los elementos estan alineados y automaticamente se configuran para entrar en una misma linea y no dan un salto de linea, y flex wrap rap, hace que vayan dando salto entre lineas */
+    flex-direction: row;/* muestra la direccion que va a tener su flexbox, es decir si nuestro elemento esta hecho en formato columna o fila (siempre viene en valor row es decir fila)*/
+/* tambien puede ser row reverse() o columnreverse(para dar vuelta el orden de los divs)*/
+    height: 600px;
+    background-color: coral;
+    align-items: center;/* aling items es alinear items */ /* end alinea abajo */ /* start hacia arriba */ /* actua sobre el eje vertical */
+    justify-content: space-between;/* justify content actua sobre el eje x */ /* space between ocupa todo el espacio dejando espacios simetricos entre los divs */ /* space evenly nos da el mismo espacio en todos lados */ /* space around nos da el espaciado entre divs igual y la mitad de ese espaciado hacia los margenes */
+    gap: 20px;/* espaciado entre los divs */
+    padding: 0px 60px; /* espaciado dentro de los margenes dentro de section */
+
+}
+
+section .caja{
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.logo_container{
+    background-color: aqua;
+}
+
+header nav{
+    display: flex;
+    gap: 20px;
+    background-color: blue;
+}

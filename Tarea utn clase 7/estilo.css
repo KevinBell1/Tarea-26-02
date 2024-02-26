@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(40, 38, 46);
+    color: white;
+    padding: 15px 60px;
+}
+.div_nav{
+    display: flex;
+    font-size: 20px;
+    justify-content:flex-end;
+}
+.navegador{
+    display: flex;
+    padding: 0px 50px;
+    font-size: 20px ;
+    justify-content: space-between;
+}
+h2{
+    color: white;
+    padding-left: 60px;
+}
+input{
+    color:white;
+    background-color: rgb(147, 182, 247);
+    border-radius: 15px;
+}
